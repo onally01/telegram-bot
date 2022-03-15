@@ -14,8 +14,4 @@ class ExampleController extends Controller
         //
     }
 
-    public function sendMessageToSubscribers()
-    {
-        return (new Telegram())->sendMessage();
-    }
 }

@@ -1,12 +1,9 @@
 <?php
 
-
 namespace Web\App\Api\V1\Controllers;
-
 
 use App\Http\Controllers\Controller;
 use Telegram\Bot\Api;
-
 
 class WebHookController extends Controller
 {
