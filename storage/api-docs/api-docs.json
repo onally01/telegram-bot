@@ -1,0 +1,79 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Telegram BOT API",
+        "version": "0.1"
+    },
+    "paths": {
+        "/send-subscriber-msg": {
+            "get": {
+                "tags": [
+                    "Telegram"
+                ],
+                "summary": "Send Message to Subscriber",
+                "description": "The bot can send message to subscribers that are subscribed to the channel",
+                "operationId": "099d6344a62827f77ca4332ff0f261e1",
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid tag value"
+                    }
+                },
+                "security": [
+                    {
+                        "petstore_auth": [
+                            "write:pets",
+                            "read:pets"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/set-webhook": {
+            "get": {
+                "tags": [
+                    "Telegram"
+                ],
+                "summary": "Set Webhook",
+                "description": "Set webhook to receive incoming updates via an outgoing webhook",
+                "operationId": "7cd0e3012d038ef9fae8c61569dbfbf1",
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid tag value"
+                    }
+                },
+                "security": [
+                    {
+                        "petstore_auth": [
+                            "write:pets",
+                            "read:pets"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/webhook": {
+            "get": {
+                "tags": [
+                    "Telegram"
+                ],
+                "summary": "Recieve webhook",
+                "description": "Receive webhook from Telegram",
+                "operationId": "9808379c27197abdad050a5e7d6f3ab5",
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid tag value"
+                    }
+                }
+            }
+        }
+    }
+}
